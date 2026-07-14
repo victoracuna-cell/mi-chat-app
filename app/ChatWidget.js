@@ -41,14 +41,12 @@ export default function ChatWidget() {
         }
 
         :root {
-          /* Azul de marca */
           --chat--color-primary: #002fe2;
           --chat--color-primary-shade-50: #0026b8;
           --chat--color-primary-shade-100: #001c8a;
           --chat--color-secondary: #002fe2;
           --chat--color-secondary-shade-50: #0026b8;
 
-          /* Base minimalista: blancos y grises suaves */
           --chat--color-white: #ffffff;
           --chat--color-light: #f7f8fb;
           --chat--color-light-shade-50: #edeff5;
@@ -58,12 +56,10 @@ export default function ChatWidget() {
           --chat--color-disabled: #a3a3a3;
           --chat--color-typing: #4d4d4d;
 
-          /* Formas y espaciado limpios */
           --chat--spacing: 1rem;
           --chat--border-radius: 12px;
           --chat--transition-duration: 0.15s;
 
-          /* Mensajes */
           --chat--message--font-size: 1rem;
           --chat--message-line-height: 1.5;
           --chat--message--padding: var(--chat--spacing);
@@ -75,15 +71,19 @@ export default function ChatWidget() {
           --chat--message--user--color: var(--chat--color-white);
           --chat--message--user--border: none;
 
-          /* Input */
           --chat--input--border-radius: 12px;
           --chat--input--border: 1px solid var(--chat--color-light-shade-100);
           --chat--input--send--button--background: var(--chat--color-primary);
           --chat--input--send--button--color: var(--chat--color-white);
 
-          /* Header (por si algún día lo activas) */
           --chat--header--background: var(--chat--color-white);
           --chat--header--color: var(--chat--color-dark);
+          --chat--header--padding: 1.25rem 1.5rem;
+          --chat--heading--font-size: 1.25rem;
+        }
+
+        .chat-header {
+          border-bottom: 1px solid var(--chat--color-light-shade-100);
         }
       `}</style>
     </>
